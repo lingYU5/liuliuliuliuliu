@@ -1,0 +1,44 @@
+//
+//  PrefixHeader.pch
+//  LOLhezi
+//
+//  Created by 吴凌洁 on 16/1/12.
+//  Copyright © 2016年 lanou. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#define kWidth self.view.bounds.size.width
+#define kHeight self.view.bounds.size.height
+
+#define kWIDTH frame.size.width
+#define kHEIGHT frame.size.height
+
+#define kFreeHeroURL @"http://lolbox.duowan.com/phone/apiHeroes.php?v=70&type=free&OSType=iOS8.1.2"
+#define kAllHeroURL @"http://lolbox.duowan.com/phone/apiHeroes.php?v=70&type=all&OSType=iOS8.1.2"
+#define kHeroHeadPortrait @"http://img.lolbox.duowan.com/champions/%@_120x120.jpg" // 参数 英雄名(英文名)
+#define kHeroSkill @"http://img.lolbox.duowan.com/abilities/%@_%@_64x64.png?v=10&OSType=iOS7.0.3" // 第一个参数 英雄名(英文名)  第二个参数 技能按键
+#define kHeroDetail @"http://lolbox.duowan.com/phone/apiHeroDetail.php?OSType=iOS8.1.2&v=70&heroName=%@" // 参数 英雄名(英文名)
+#define kEquip @"http://img.lolbox.duowan.com/zb/%@_64x64.png" // 参数 装备编号
+#define kHeroAppearEquip @"http://db.duowan.com/lolcz/img/ku11/api/lolcz.php?v=70&OSType=iOS8.1.2&limit=7&championName=%@" // 参数 英雄名(英文名)
+#define kHeroGiftRune @"http://box.dwstatic.com/apiHeroSuggestedGiftAndRun.php?v=70&hero=%@&OSType=iOS8.1.2" // 参数 英雄名(英文名)
+#define kEquipSort @"http://lolbox.duowan.com/phone/apiZBCategory.php?v=156&OSType=iOS9.2&versionName=2.4.5"
+#define kEquipList @"http://lolbox.duowan.com/phone/apiZBItemList.php?tag=%@&v=156&OSType=iOS9.2&versionName=2.4.5" // 参数 装备类型
+#define kEquipDetail @"http://lolbox.duowan.com/phone/apiItemDetail.php?id=%@&v=156&OSType=iOS9.2" // 参数 装备ID
+#define kGroup @"http://box.dwstatic.com/apiHeroBestGroup.php?v=156&OSType=iOS9.2"
+#define kRune @"http://lolbox.duowan.com/phone/apiRunes.php?v=70&OSType=iOS8.1.2"
+#define kRuneImage @"http://img.lolbox.duowan.com/runes/%@_3.png" // 参数 符文的image编号
+#define kSkill @"http://lolbox.duowan.com/phone/apiSumAbility.php?v=70&OSType=iOS8.1.2"
+#define kSkillImage @"http://img.lolbox.duowan.com/spells/png/%@.png" // 参数 技能的id
+#define kAllArea @"http://lolbox.duowan.com/phone/apiServers.php?v=70&OSType=iOS8.1.2&versionName=2.1.4"
+#define kFighting @"http://zdl.mbox.duowan.com/phone/playerDetailNew.php?sn=%@&target=%@&v=70&OSType=iOS8.1.2&versionName=2.1.4" // 战斗力查询
+#define kMyHero @"http://lolbox.duowan.com/phone/apiMyHeroes.php?serverName=%@&OSType=iOS8.1.2&target=%@&v=70" // 参数 大区编号  召唤师姓名
+#define kKengD @"http://115.28.43.55/lol/index.php/Chaxun/index"
+
+
+#endif /* PrefixHeader_pch */
